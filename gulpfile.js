@@ -20,21 +20,27 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts/'
+        fonts: 'build/fonts/',
+        fontsCss:'build/css/',
+        libs:'build/libs/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
-        fonts: 'src/fonts/**/*.*'
-    },
+        fonts: 'src/fonts/**/*.*',
+        fontsCss:'src/style/partials/fonts.css',
+        libs:'src/libs/**/*.*'
+    }, 
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        fontsCss:'src/style/partials/fonts.css',
+        libs:'src/libs/**/*.*'
     },
     clean: './build'
 };
@@ -94,12 +100,24 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('fontsCss:build', function() {
+    gulp.src(path.src.fontsCss)
+        .pipe(gulp.dest(path.build.fontsCss))
+});
+
+gulp.task('libs:build', function() {
+    gulp.src(path.src.libs)
+        .pipe(gulp.dest(path.build.libs))
+});
+
 gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'fontsCss:build',
+    'libs:build'
 ]);
 
 gulp.task('watch', function(){
@@ -117,6 +135,12 @@ gulp.task('watch', function(){
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');
+    });
+    watch([path.watch.fontsCss], function(event, cb) {
+        gulp.start('fontsCss:build');
+    });
+    watch([path.watch.libs], function(event, cb) {
+        gulp.start('libs:build');
     });
 });
 
