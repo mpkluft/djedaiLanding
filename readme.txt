@@ -5,3 +5,9 @@ http://habrahabr.ru/post/250569/  gulp
 http://fonts4web.ru/ - fonts for site (woff,eot, ttf)
 sublime commands 
 ctr shift C - color picker
+///////////////////////////
+git command
+git init
+git commit -m "first commit"
+git remote add origin git@github.com:mpkluft/landing.git
+git push -u origin master
