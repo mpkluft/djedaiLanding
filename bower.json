@@ -13,11 +13,11 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "*",
     "html5shiv": "~3.7.3",
     "bootstrap": "~3.3.5",
     "fancybox": "~2.1.5",
     "jquery": "~2.1.4",
-    "equalheight": "~1.0.1"
+    "equalheight": "~1.0.1",
+    "bourbon": "~4.2.6"
   }
 }
