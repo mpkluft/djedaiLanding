@@ -10,3 +10,19 @@
 */
 @import "partials/app.scss";
 @import "partials/media.css";
+
+$main-text-color: #2C3949;
+$a-color: #F39F18;
+
+a {
+  color: $a-color;
+  font-family: "PFCentroSlabProMedium", $georgia;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PFCentroSlabProMedium", $georgia;
+}
+
+h1 {
+
+}

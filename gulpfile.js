@@ -30,7 +30,7 @@ var path = {
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*',
-        fontsCss:'src/style/partials/fonts.css',
+        fontsCss:'src/style/partials/fonts.scss',
         libs:'src/libs/**/*.*'
     }, 
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
@@ -39,7 +39,7 @@ var path = {
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        fontsCss:'src/style/partials/fonts.css',
+        fontsCss:'src/style/partials/fonts.scss',
         libs:'src/libs/**/*.*'
     },
     clean: './build'
@@ -102,6 +102,7 @@ gulp.task('fonts:build', function() {
 
 gulp.task('fontsCss:build', function() {
     gulp.src(path.src.fontsCss)
+        .pipe(sass()) //Скомпилируем
         .pipe(gulp.dest(path.build.fontsCss))
 });
 
