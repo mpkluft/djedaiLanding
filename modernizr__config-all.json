@@ -1,0 +1,31 @@
+{
+  "classPrefix": "",
+  "options": [
+    "addTest",
+    "atRule",
+    "domPrefixes",
+    "hasEvent",
+    "html5shiv",
+    "html5printshiv",
+    "load",
+    "mq",
+    "prefixed",
+    "prefixes",
+    "prefixedCSS",
+    "setClasses",
+    "testAllProps",
+    "testProp",
+    "testStyles"
+  ],
+  "feature-detects": [
+    "canvas",
+    "cookies",
+    "css/animations",
+    "css/gradients",
+    "css/opacity",
+    "css/overflow-scrolling",
+    "css/rgba",
+    "svg",
+    "video"
+  ]
+}
