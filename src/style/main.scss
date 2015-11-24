@@ -23,7 +23,11 @@ $a-color: #F39F18;
   left: 0;
   right: 0;
 }
-
+.ul-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 a {
   color: $a-color;
   font-family: "PFCentroSlabProMedium", $georgia;
@@ -46,13 +50,55 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.top-line {
+.top-line_header{
   width: 100%;
   min-height: 160px;
   padding-top: 45px;
   background-image: url('../img/top_gradient.png');
+  background-repeat: repeat-x;
 }
 
 .header-logo_img {
   width: 100px;
+}
+
+.menu-header_ul {
+  @extend .ul-menu;
+}
+
+.li-item {
+  display: inline-block;
+  line-height: 46px;
+  padding: 0 10px;
+}
+.li-item_a {
+  color: #fff;
+  font-size: em(11px);
+}
+.li-item_active-a {
+  color: $a-color;
+  text-decoration: underline;
+}
+.li-item_a:hover {
+  color: $a-color;
+  text-decoration: underline;
+}
+.li-item_a:active {
+  color: $a-color;
+  text-decoration: underline;
+}
+.phone {
+  line-height: 46px;
+  color: #fff;
+}
+.phone_span {
+  font-family: "RobotoBold";
+}
+.a-buton-menu, .phone_span {
+  display: inline-block;
+  float: right;
+}
+.a-buton-menu {
+  padding: 0 0 0 30px;
+  line-height: 46px;
 }

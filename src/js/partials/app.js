@@ -4,7 +4,6 @@ function isEven(val) {
 }
 
 if(!Modernizr.svg) {
-	alert("Hello");
 	$("img[src*='svg']").attr("src", function() {
 		return $(this).attr("src").replace(".svg", ".png");
 	});
