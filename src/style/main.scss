@@ -4,7 +4,7 @@
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "../libs/fancybox/jquery.fancybox.css";
-
+@import "../libs/MenuToggleButton/MenuToggleButton.css";
 /*
 * Custom
 */
@@ -94,11 +94,10 @@ h1, h2, h3, h4, h5, h6 {
 .phone_span {
   font-family: "RobotoBold";
 }
-.a-buton-menu, .phone_span {
+.phone_span, .phone {
   display: inline-block;
-  float: right;
 }
-.a-buton-menu {
-  padding: 0 0 0 30px;
-  line-height: 46px;
+.menuToggleButton {
+  display: none;
+  vertical-align: middle;
 }
