@@ -1,0 +1,95 @@
+/* Important styles */
+.menuToggleButton {
+  display: block;
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
+}
+
+.menuToggleButton span:after,
+.menuToggleButton span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+.menuToggleButton span:after{
+  top: 9px;
+}
+.menuToggleButton span {
+  position: relative;
+  display: block;
+}
+
+.menuToggleButton span,
+.menuToggleButton span:after,
+.menuToggleButton span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+.menuToggleButton.on span {
+  background-color: transparent;
+}
+.menuToggleButton.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menuToggleButton.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+.menuToggleButton.on + #menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* menu appearance*/
+.menuToggleButton_div {
+  position: absolute;
+  color: #999;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  /* just for this demo */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+}
+.menuToggleButton_div:after {
+  position: absolute;
+  top: -15px;
+  left: 95px;
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+.menuToggleButton_div ul,
+.menuToggleButton_div li,
+.menuToggleButton_div li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.menuToggleButton_div li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+}
+.menuToggleButton_div li a:hover,
+.menuToggleButton_div li a:focus {
+  background: #1ABC9C;
+  color: #fff;
+}

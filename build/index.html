@@ -8,39 +8,93 @@
 
 <head>
 
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	<title>Заголовок</title>
-	<meta name="description" content="">
+  <title>Заголовок</title>
+  <meta name="description" content="">
+	<script type="text/javascript" src="js/modernizr.js"></script>
+  <!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+  <script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+  
+  <!-- Load CSS Compilled without JS -->
+  <noscript>
 
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!--link rel="stylesheet" href="_header.min.css">
+    <link rel="stylesheet" href="_main.min.css"!-->
+  </noscript>
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body>
-	<section></section>
-	<!-- Здесь пишем код -->
-	<h1>Hello</h1>
-	<div class="hidden"></div>
+  <!-- Здесь пишем код -->
+  <header class="main-header"style="background-image: url(img/header_bg.jpg)">
+    <div class="top-line_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-3">
+            <a href="#" class="header-logo"><img src="img/logo.svg" alt="" class="header-logo_img"></a>
+          </div>
+          <div class="col-md-7">
+            <nav class="menu-header">
+              <ul class="menu-header_ul">
+                <li class="li-item li-item_active"><a class="li-item_a li-item_active-a" href="#">Главная</a></li>
+                <li class="li-item"><a class="li-item_a" href="#">О компании</a></li>
+                <li class="li-item"><a class="li-item_a" href="#">Оценка</a></li>
+                <li class="li-item"><a class="li-item_a" href="#">Сделка М&A</a></li>
+                <li class="li-item"><a class="li-item_a" href="#">Бухгалтерские услуги</a></li>
+                <li class="li-item"><a class="li-item_a" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+ <div class="col-md-2 col-xs-9">
+            <a href="#menu"  class="menuToggleButton"><span></span></a>
+							<div id="menu" class="menuToggleButton_div">
+							  <ul>
+							    <li><a href="#home">Главная</a></li>
+							    <li><a href="#about">О компании</a></li>
+							    <li><a href="#contact">Оценка</a></li>
+							    <li><a href="#contact">Сделка М&A</a></li>
+							    <li><a href="#contact">Бухгалтерские услуги</a></li>
+							    <li><a href="#contact">Контакты</a></li>
+							  </ul>
+							</div>
+            <div class="phone">
+              <span class="phone_span">
+                +7(459)789-77-87
+              </span>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<div class="loader">
-		<div class="loader_inner"></div>
-	</div>
+  <div class="loader">
+    <div class="loader_inner"></div>
+  </div>
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-	
+  <!--[if lt IE 9]>
+  <script src="libs/html5shiv/es5-shim.min.js"></script>
+  <script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+  <![endif]-->
+
+<!-- Load Scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="libs/MenuToggleButton/MenuToggleButton.js"></script>
+  
 </body>
 </html>

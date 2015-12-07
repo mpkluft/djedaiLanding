@@ -2,27 +2,43 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+  .menu-header {
+    display: none;
+  }
+  a.menuToggleButton {
+    margin: 18px auto 10px;
+    display: inline-block;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+  .menu-header {
+    display: none;
+  }
+  a.menuToggleButton {
+    display: inline-block;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  a.menuToggleButton {
+    display: inline-block;
+  }
+  span.phone_span {
+    display: block;
+    float: right;
+    clear: both;
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
 }
 
 
