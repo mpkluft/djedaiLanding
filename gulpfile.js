@@ -1,12 +1,12 @@
 'use strict';
 
 var gulp = require('gulp'),
+    rigger = require('gulp-rigger'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
@@ -26,11 +26,11 @@ var path = {
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-        js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+        js: 'src/js/*.js',//В стилях и скриптах нам понадобятся только main файлы
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*',
-        fontsCss:'src/style/partials/fonts.css',
+        fontsCss:'src/style/partials/fonts.scss',
         libs:'src/libs/**/*.*'
     }, 
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
@@ -39,7 +39,7 @@ var path = {
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        fontsCss:'src/style/partials/fonts.css',
+        fontsCss:'src/style/partials/fonts.scss',
         libs:'src/libs/**/*.*'
     },
     clean: './build'
@@ -57,7 +57,6 @@ var config = {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
 });
@@ -75,10 +74,6 @@ gulp.task('style:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //Найдем наш main файл
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(sourcemaps.init()) //Инициализируем sourcemap
-        .pipe(uglify()) //Сожмем наш js
-        .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
@@ -102,6 +97,7 @@ gulp.task('fonts:build', function() {
 
 gulp.task('fontsCss:build', function() {
     gulp.src(path.src.fontsCss)
+        .pipe(sass()) //Скомпилируем
         .pipe(gulp.dest(path.build.fontsCss))
 });
 

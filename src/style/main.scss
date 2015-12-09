@@ -28,6 +28,14 @@ $a-color: #F39F18;
   padding: 0;
   list-style-type: none;
 }
+.forms {
+  opacity: 0.8;
+  background-color: #243343;
+  padding: 25px 30px;
+  color: #97a4b2;
+  font-size: em(14px);
+
+}
 a {
   color: $a-color;
   font-family: "PFCentroSlabProMedium", $georgia;
@@ -87,17 +95,59 @@ h1, h2, h3, h4, h5, h6 {
   color: $a-color;
   text-decoration: underline;
 }
-.phone {
-  line-height: 46px;
+
+.phone_span {
+  font-family: "RobotoBold";
   color: #fff;
 }
 .phone_span {
-  font-family: "RobotoBold";
-}
-.phone_span, .phone {
-  display: inline-block;
+  float: right;
+  font-size: 19px;
+  margin: 9px 0 0;
 }
 .menuToggleButton {
   display: none;
-  vertical-align: middle;
+  float: right;
+}
+
+wrap_header {
+  margin-top: 40px;
+}
+.h1-logo {
+  color: #fff;
+  margin-top: 120px;
+  border-bottom: #F39E1A 8px solid;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.ul-header {
+  @extend .ul-menu;
+}
+.ul-header_li {
+  font-family: "RalewaySemiBold", $helvetica;
+  line-height: em(30px);
+}
+.ul-header_li::before {
+  display: inline-block;
+  content: "";
+  @include triangle(11px 6px, #F39E1A, right);
+  margin-right: 5px;
+}
+.a-header {
+  text-decoration: none;
+  color: #fff;
+  font-size: em(18px);
+  &::hover {
+    text-decoration: underline;
+  }
+}
+
+.header-form {
+  @extend .forms;
+}
+.h4-form {
+  font-family: "PFCentroSlabProMedium";
+  font-size: em(30px);
+  color: #fff;
+  text-transform: none;
 }

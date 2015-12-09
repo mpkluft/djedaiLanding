@@ -1,40 +1,49 @@
-/* font-family: "RobotoRegular"; */
+/* font-family: "PFCentroSlabProBold"; */
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-/* font-family: "RobotoLight"; */
+  font-family: "PFCentroSlabProBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PFCentroSlabProBold/PFCentroSlabProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSlabProBold/PFCentroSlabProBold.woff2") format("woff2"), url("../fonts/PFCentroSlabProBold/PFCentroSlabProBold.woff") format("woff"); }
+
+/* font-family: "PFCentroSlabProMedium"; */
 @font-face {
-	font-family: "RobotoLight";
-	src: url("../fonts/RobotoLight/RobotoLight.eot");
-	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
-	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-/* font-family: "RobotoMedium"; */
+  font-family: "PFCentroSlabProMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.woff2") format("woff2"), url("../fonts/PFCentroSlabProMedium/PFCentroSlabProMedium.woff") format("woff"); }
+
+/* font-family: "PFCentroSlabProMedium"; */
+/* font-family: "RalewayBold"; */
 @font-face {
-	font-family: "RobotoMedium";
-	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
-	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
-	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-/* font-family: "RobotoBold"; */
+  font-family: "RalewayBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBold/RalewayBold.woff2") format("woff2"), url("../fonts/RalewayBold/RalewayBold.woff") format("woff"); }
+
+/* font-family: "RalewayRegular"; */
 @font-face {
-	font-family: "RobotoBold";
-	src: url("../fonts/RobotoBold/RobotoBold.eot");
-	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
-	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff2") format("woff2"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"); }
+
+/* font-family: "RalewaySemiBold"; */
+@font-face {
+  font-family: "RalewaySemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff2") format("woff2"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"); }
+
+/* font-family: "RalewaySemiBold"; */
+@font-face {
+  font-family: "RalewaySemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff2") format("woff2"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"); }
+
+/* font-family: "RalewaySemiBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff2") format("woff2"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"); }

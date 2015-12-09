@@ -64,6 +64,7 @@
   visibility: hidden;
   transition: opacity .4s;
 }
+/*
 .menuToggleButton_div:after {
   position: absolute;
   top: -15px;
@@ -74,6 +75,7 @@
   border-right: 15px solid transparent;
   border-bottom: 20px solid white;
 }
+*/
 .menuToggleButton_div ul,
 .menuToggleButton_div li,
 .menuToggleButton_div li a {

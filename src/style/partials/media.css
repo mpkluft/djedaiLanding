@@ -2,6 +2,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+  span.phone_span {
+    float: right;
+    font-size: 15px;
+    margin: 13px 0 0;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -10,8 +15,17 @@
     display: none;
   }
   a.menuToggleButton {
-    margin: 18px auto 10px;
-    display: inline-block;
+    display: inline;
+    margin: 18px 0 0 40px;
+  }
+  span.phone_span {
+    float: right;
+    font-size: 19px;
+    margin: 5px 0 0;
+  }
+  div.menuToggleButton_div {
+    top: 55px;
+    right: 5px;
   }
 }
 
@@ -21,24 +35,59 @@
     display: none;
   }
   a.menuToggleButton {
-    display: inline-block;
+    display: inline;
+    margin: 18px 0 0 40px;
+  }
+  span.phone_span {
+    float: right;
+    font-size: 19px;
+    margin: 5px 0 0;
+  }
+  div.menuToggleButton_div {
+    top: 55px;
+    right: 5px;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   a.menuToggleButton {
-    display: inline-block;
+    margin: 18px 0 0 10px;
+    display: inline;
   }
   span.phone_span {
-    display: block;
     float: right;
-    clear: both;
+    font-size: 14px;
+    margin: 9px 0 0;
+  }
+  div.menuToggleButton_div {
+    top: 55px;
+    right: 5px;
   }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+ a.menuToggleButton {
+    margin: 18px 0 0 5px;
+    display: inline;
+    width: 19px;
+  }
+  span.phone_span {
+    font-size: 14px;
+    margin: 9px 0 0;
+  }
+  img.header-logo_img {
+    width: 70px;
+  }
+  a.header-logo {
+    line-height: 42px;
+  }
+  div.menuToggleButton_div {
+    width: 100%;
+    top: 55px;
+    right: 5px;
+  }
 }
 
 
