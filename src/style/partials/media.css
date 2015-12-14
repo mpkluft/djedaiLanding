@@ -11,6 +11,21 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  h1.h1-logo {
+    margin: 0;
+  }
+  div.top-line_header{
+    min-height: 125px;
+  }
+  div.header_wrap {
+    margin: 0;
+  }
+  ul.ul-header {
+    padding: 20px 0;
+  }
+  div.icon-row {
+    margin-top: 25px;
+}
   .menu-header {
     display: none;
   }
@@ -31,6 +46,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  div.icon-row {
+    margin: 19px 0;
+  }
+  div.top-line_header{
+    min-height: 125px;
+  }
   .menu-header {
     display: none;
   }
@@ -51,6 +72,21 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  div.icon-row {
+    margin: 19px 0;
+  }
+  div.top-line_header{
+    min-height: 150px;
+  }
+  span.span-form {
+    padding: 14px 0 19px;
+}
+a.a-form-button {
+  width: auto;
+}
+div.top-line_header {
+  padding-top: 30px;
+}
   a.menuToggleButton {
     margin: 18px 0 0 10px;
     display: inline;

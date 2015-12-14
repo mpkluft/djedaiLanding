@@ -13,6 +13,7 @@
 
 $main-text-color: #2C3949;
 $a-color: #F39F18;
+$color-submit: #2C3949;
 
 .before {
   width: 100%;
@@ -23,19 +24,31 @@ $a-color: #F39F18;
   left: 0;
   right: 0;
 }
+
+.after {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+}
+
 .ul-menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
 .forms {
   opacity: 0.8;
   background-color: #243343;
-  padding: 25px 30px;
+  padding: 30px;
   color: #97a4b2;
   font-size: em(14px);
-
 }
+
 a {
   color: $a-color;
   font-family: "PFCentroSlabProMedium", $georgia;
@@ -43,27 +56,48 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "PFCentroSlabProMedium", $georgia;
+  margin: 0;
+}
+.button {
+  display: inline-block;
+  height: 46px;
+  background-color: #F39F18;
+  border-bottom: 2px solid #B97200;
+  color: #000;
+  font-family: "PFCentroSlabProBold", $georgia;
+  font-size: em(22px);
+  text-align: center;
+  padding: 10px 0;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+.button_span {
+  margin: 0 15px;
 }
 
 .main-header {
   width: 100%;
-  min-height: 600px;
+  min-height: 710px;
   background-size: cover;
   background-position: center;
   position: relative;
   &::before {
     @extend .before;
-    background-color: #394b5f;
+    background: #394b5f;
     opacity: .85;
   }
 }
+
+/* .top-line_header begin */
 
 .top-line_header{
   width: 100%;
   min-height: 160px;
   padding-top: 45px;
-  background-image: url('../img/top_gradient.png');
-  background-repeat: repeat-x;
+  background: url('../img/top_gradient.png') repeat-x;
+
 }
 
 .header-logo_img {
@@ -81,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .li-item_a {
   color: #fff;
-  font-size: em(11px);
+  font-size: em(13px);
 }
 .li-item_active-a {
   color: $a-color;
@@ -110,7 +144,15 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
 }
 
-wrap_header {
+.menuToggleButton.on+#menu {
+    z-index: 10;
+}
+
+/* .top-line_header end */
+
+/* .header_wrap begin */
+
+.header_wrap {
   margin-top: 40px;
 }
 .h1-logo {
@@ -122,6 +164,7 @@ wrap_header {
 }
 .ul-header {
   @extend .ul-menu;
+  padding-top: 40px;
 }
 .ul-header_li {
   font-family: "RalewaySemiBold", $helvetica;
@@ -137,8 +180,9 @@ wrap_header {
   text-decoration: none;
   color: #fff;
   font-size: em(18px);
-  &::hover {
+  &:hover {
     text-decoration: underline;
+    color: #fff;
   }
 }
 
@@ -146,8 +190,97 @@ wrap_header {
   @extend .forms;
 }
 .h4-form {
-  font-family: "PFCentroSlabProMedium";
+  font-family: "PFCentroSlabProMedium", $georgia;
   font-size: em(30px);
   color: #fff;
   text-transform: none;
+  margin: 0;
 }
+.span-form {
+  display: block;
+  font-size: em(15px);
+  font-family: "RalewayRegular", $georgia;
+  padding: 18px 0 30px 0;
+}
+.div-form {
+  padding-bottom: 20px;
+}
+.div-form_a {
+  text-align: center;
+}
+.div-form_input {
+  width: 100%;
+  height: 30px;
+  background-color: #34465A;
+  border: 0;
+  border-top: 2px solid #1F2A36;
+  color: #fff;
+  &:focus {
+    font-size: 18px;
+    border-top: 5px solid #1F2A36;
+  }
+  @include transition(all 1.0s ease-in-out);
+}
+.div-form_span {
+  display: block;
+  padding-bottom: 7px;
+  font-family: "RalewayRegular", $georgia;
+}
+.a-form-button {
+  @extend .button;
+}
+.a-form-button_span {
+  @extend .button_span;
+}
+/* .header_wrap end */
+
+/* .icon-row begin */
+
+.icon-row {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* .icon-row end */
+
+
+/* .main-section begin */
+
+.main-section_white {
+  position: relative;
+  &:before {
+    @extend .before;
+    background: url('../img/bah_1.png') repeat-x;
+    top: -5px;
+  }
+} 
+
+.main-section_head {
+  text-align: center;
+}
+.h1-section {
+  display: inline-block;
+  margin: 100px 0 70px;
+  &:after {
+    @extend .after;
+    margin-top: 30px;
+    background-color: $a-color;
+    height: 4px;
+    width: 165px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.p-section {
+  margin: 0 0 65px 0;
+}
+.main-section_submit {
+  width: 100%;
+  background-color: $color-submit;
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+
+/* .main-section end */
