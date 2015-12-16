@@ -7,6 +7,12 @@
     font-size: 15px;
     margin: 13px 0 0;
   }
+  div.item-content {
+    padding: 55px 0 0;
+  }
+  div.item-content-second {
+   padding: 0;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -42,6 +48,25 @@
     top: 55px;
     right: 5px;
   }
+  h1.h1-section {
+    margin: 50px 0 70px;
+  }
+  p.p-section {
+    margin: 0;
+  }
+  div.item-content {
+    padding-top: 15px;
+  }
+  p.p-item-content {
+    padding: 10px 0;
+  }
+  div.content-icon {
+    top: -55px;
+    background-position: right bottom;
+  }
+  div.content-icon-logo {
+    top: 113px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -67,6 +92,18 @@
   div.menuToggleButton_div {
     top: 55px;
     right: 5px;
+  }
+  div.content-icon {
+    display: none;
+  }
+  div.content-icon-logo {
+    display: none;
+  }
+  div.content-triangl-bg{
+    display: none;
+  }
+  div.content-first-row {
+    min-height: 460px;
   }
 }
 
