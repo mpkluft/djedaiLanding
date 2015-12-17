@@ -32,3 +32,9 @@ razmeschenie v centre -  position: absolute;  left:50% + margin-left: -width/2
 div - table -  display:table;, display:table-row;  display:table-cell;
 
 >>>>>>> 79e46d8ec6ccabcb2d91581f161e42ebaa82c6bd
+создание шрифтов из SVG 
+создать два файла для шрифтов в svg - svg и -svgSource (для редактирования) + создать PNG дял просмотра
+файл СВГ поргнать через конвертер svg to ttf https://cloudconvert.com/svg-to-ttf
+ttf прогнать  через http://www.fontsquirrel.com/
+
+

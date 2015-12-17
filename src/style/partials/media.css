@@ -1,192 +1,202 @@
 /*==========  Desktop First Method  ==========*/
 
+
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-  span.phone_span {
-    float: right;
-    font-size: 15px;
-    margin: 13px 0 0;
-  }
-  div.item-content {
-    padding: 55px 0 0;
-  }
-  div.item-content-second {
-   padding: 0;
-  }
+
+@media only screen and (max-width: 1200px) {
+    span.phone_span {
+        float: right;
+        font-size: 15px;
+        margin: 13px 0 0;
+    }
+    div.item-content-down {
+        padding: 55px 0 0;
+    }
+    div.item-content-second {
+        padding: 0;
+    }
 }
+
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-  h1.h1-logo {
-    margin: 0;
-  }
-  div.top-line_header{
-    min-height: 125px;
-  }
-  div.header_wrap {
-    margin: 0;
-  }
-  ul.ul-header {
-    padding: 20px 0;
-  }
-  div.icon-row {
-    margin-top: 25px;
+
+@media only screen and (max-width: 992px) {
+    h1.h1-logo {
+        margin: 0;
+    }
+    div.top-line_header {
+        min-height: 125px;
+    }
+    div.header_wrap {
+        margin: 0;
+    }
+    ul.ul-header {
+        padding: 20px 0;
+    }
+    div.icon-row {
+        margin-top: 25px;
+    }
+    .menu-header {
+        display: none;
+    }
+    a.menuToggleButton {
+        display: inline;
+        margin: 18px 0 0 40px;
+    }
+    span.phone_span {
+        float: right;
+        font-size: 19px;
+        margin: 5px 0 0;
+    }
+    div.menuToggleButton_div {
+        top: 55px;
+        right: 5px;
+    }
+    h1.h1-section {
+        margin: 50px 0 70px;
+    }
+    p.p-section {
+        margin: 0 0 25px;
+    }
+    div.item-content-down {
+        padding-top: 15px;
+    }
+    p.p-item-content {
+        padding: 10px 0;
+    }
+    div.content-icon {
+        top: -355px;
+        background-position: right bottom;
+    }
+    div.content-icon-logo {
+        top: 113px;
+    }
 }
-  .menu-header {
-    display: none;
-  }
-  a.menuToggleButton {
-    display: inline;
-    margin: 18px 0 0 40px;
-  }
-  span.phone_span {
-    float: right;
-    font-size: 19px;
-    margin: 5px 0 0;
-  }
-  div.menuToggleButton_div {
-    top: 55px;
-    right: 5px;
-  }
-  h1.h1-section {
-    margin: 50px 0 70px;
-  }
-  p.p-section {
-    margin: 0;
-  }
-  div.item-content {
-    padding-top: 15px;
-  }
-  p.p-item-content {
-    padding: 10px 0;
-  }
-  div.content-icon {
-    top: -55px;
-    background-position: right bottom;
-  }
-  div.content-icon-logo {
-    top: 113px;
-  }
-}
+
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-  div.icon-row {
-    margin: 19px 0;
-  }
-  div.top-line_header{
-    min-height: 125px;
-  }
-  .menu-header {
-    display: none;
-  }
-  a.menuToggleButton {
-    display: inline;
-    margin: 18px 0 0 40px;
-  }
-  span.phone_span {
-    float: right;
-    font-size: 19px;
-    margin: 5px 0 0;
-  }
-  div.menuToggleButton_div {
-    top: 55px;
-    right: 5px;
-  }
-  div.content-icon {
-    display: none;
-  }
-  div.content-icon-logo {
-    display: none;
-  }
-  div.content-triangl-bg{
-    display: none;
-  }
-  div.content-first-row {
-    min-height: 460px;
-  }
+
+@media only screen and (max-width: 768px) {
+    div.icon-row {
+        margin: 19px 0;
+    }
+    div.top-line_header {
+        min-height: 125px;
+    }
+    .menu-header {
+        display: none;
+    }
+    a.menuToggleButton {
+        display: inline;
+        margin: 18px 0 0 40px;
+    }
+    span.phone_span {
+        float: right;
+        font-size: 19px;
+        margin: 5px 0 0;
+    }
+    div.menuToggleButton_div {
+        top: 55px;
+        right: 5px;
+    }
+    div.content-icon {
+        display: none;
+    }
+    div.content-icon-logo {
+        display: none;
+    }
+    div.content-triangl-bg {
+        display: none;
+    }
+    div.content-first-row {
+        min-height: 460px;
+    }
 }
+
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-  div.icon-row {
-    margin: 19px 0;
-  }
-  div.top-line_header{
-    min-height: 150px;
-  }
-  span.span-form {
-    padding: 14px 0 19px;
-}
-a.a-form-button {
-  width: auto;
-}
-div.top-line_header {
-  padding-top: 30px;
-}
-  a.menuToggleButton {
-    margin: 18px 0 0 10px;
-    display: inline;
-  }
-  span.phone_span {
-    float: right;
-    font-size: 14px;
-    margin: 9px 0 0;
-  }
-  div.menuToggleButton_div {
-    top: 55px;
-    right: 5px;
-  }
+
+@media only screen and (max-width: 480px) {
+    div.icon-row {
+        margin: 19px 0;
+    }
+    div.top-line_header {
+        min-height: 150px;
+    }
+    span.span-form {
+        padding: 14px 0 19px;
+    }
+    a.a-form-button {
+        width: auto;
+    }
+    div.top-line_header {
+        padding-top: 30px;
+    }
+    a.menuToggleButton {
+        margin: 18px 0 0 10px;
+        display: inline;
+    }
+    span.phone_span {
+        float: right;
+        font-size: 14px;
+        margin: 9px 0 0;
+    }
+    div.menuToggleButton_div {
+        top: 55px;
+        right: 5px;
+    }
 }
 
+
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
- a.menuToggleButton {
-    margin: 18px 0 0 5px;
-    display: inline;
-    width: 19px;
-  }
-  span.phone_span {
-    font-size: 14px;
-    margin: 9px 0 0;
-  }
-  img.header-logo_img {
-    width: 70px;
-  }
-  a.header-logo {
-    line-height: 42px;
-  }
-  div.menuToggleButton_div {
-    width: 100%;
-    top: 55px;
-    right: 5px;
-  }
+
+@media only screen and (max-width: 320px) {
+    a.menuToggleButton {
+        margin: 18px 0 0 5px;
+        display: inline;
+        width: 19px;
+    }
+    span.phone_span {
+        font-size: 14px;
+        margin: 9px 0 0;
+    }
+    img.header-logo_img {
+        width: 70px;
+    }
+    a.header-logo {
+        line-height: 42px;
+    }
+    div.menuToggleButton_div {
+        width: 100%;
+        top: 55px;
+        right: 5px;
+    }
 }
 
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
 
-}
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
 
-}
+@media only screen and (min-width: 480px) {}
+
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
 
-}
+@media only screen and (min-width: 768px) {}
+
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
 
-}
+@media only screen and (min-width: 992px) {}
 
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
 
-}
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

@@ -1,21 +1,22 @@
-    /*
-    * Third Party
-    */
-    @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
-    @import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
-    @import "../libs/fancybox/jquery.fancybox.css";
-    @import "../libs/MenuToggleButton/MenuToggleButton.css";
-    /*
-    * Custom
-    */
-    @import "partials/app.scss";
-    @import "partials/media.css";
-    
-    $main-text-color: #2C3949;
-    $a-color: #F39F18;
-    $color-submit: #394B5F;
-    
-    .before {
+/*
+* Third Party
+*/
+
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import "../libs/fancybox/jquery.fancybox.css";
+@import "../libs/MenuToggleButton/MenuToggleButton.css";
+
+/*
+* Custom
+*/
+
+@import "partials/app.scss";
+@import "partials/media.css";
+$main-text-color: #2C3949;
+$a-color: #F39F18;
+$color-submit: #394B5F;
+.before {
     width: 100%;
     height: 100%;
     display: block;
@@ -23,9 +24,9 @@
     content: "";
     left: 0;
     right: 0;
-    }
-    
-    .after {
+}
+
+.after {
     width: 100%;
     height: 100%;
     display: block;
@@ -33,32 +34,38 @@
     content: "";
     left: 0;
     right: 0;
-    }
-    
-    .ul-menu {
+}
+
+.ul-menu {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    }
-    
-    .forms {
+}
+
+.forms {
     opacity: 0.8;
     background-color: #243343;
     padding: 30px;
     color: #97a4b2;
     font-size: em(14px);
-    }
-    
-    a {
+}
+
+a {
     color: $a-color;
     font-family: "PFCentroSlabProMedium", $georgia;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "PFCentroSlabProMedium", $georgia;
     margin: 0;
-    }
-    .button {
+}
+
+.button {
     display: inline-block;
     height: 46px;
     background-color: #F39F18;
@@ -69,146 +76,167 @@
     text-align: center;
     padding: 10px 0;
     &:hover {
-    text-decoration: none;
-    color: #000;
+        text-decoration: none;
+        color: #000;
     }
-    }
-    .button_span {
+}
+
+.button_span {
     margin: 0 15px;
-    }
-    
-    .main-header {
+}
+
+.main-header {
     width: 100%;
     min-height: 710px;
     background-size: cover;
     background-position: center;
     position: relative;
     &::before {
-    @extend .before;
-    background: #394b5f;
-    opacity: .85;
+        @extend .before;
+        background: #394b5f;
+        opacity: .85;
     }
-    }
-    
-    /* .top-line_header begin */
-    
-    .top-line_header{
+}
+
+
+/* .top-line_header begin */
+
+.top-line_header {
     width: 100%;
     min-height: 160px;
     padding-top: 45px;
     background: url('../img/top_gradient.png') repeat-x;
-    
-    }
-    
-    .header-logo_img {
+}
+
+.header-logo_img {
     width: 100px;
-    }
-    
-    .menu-header_ul {
+}
+
+.menu-header_ul {
     @extend .ul-menu;
-    }
-    
-    .li-item {
+}
+
+.li-item {
     display: inline-block;
     line-height: 46px;
     padding: 0 10px;
-    }
-    .li-item_a {
+}
+
+.li-item_a {
     color: #fff;
     font-size: em(13px);
-    }
-    .li-item_active-a {
+}
+
+.li-item_active-a {
     color: $a-color;
     text-decoration: underline;
-    }
-    .li-item_a:hover {
+}
+
+.li-item_a:hover {
     color: $a-color;
     text-decoration: underline;
-    }
-    .li-item_a:active {
+}
+
+.li-item_a:active {
     color: $a-color;
     text-decoration: underline;
-    }
-    
-    .phone_span {
+}
+
+.phone_span {
     font-family: "RobotoBold";
     color: #fff;
-    }
-    .phone_span {
+}
+
+.phone_span {
     float: right;
     font-size: 19px;
     margin: 9px 0 0;
-    }
-    .menuToggleButton {
+}
+
+.menuToggleButton {
     display: none;
     float: right;
-    }
-    
-    .menuToggleButton.on+#menu {
+}
+
+.menuToggleButton.on+#menu {
     z-index: 10;
-    }
-    
-    /* .top-line_header end */
-    
-    /* .header_wrap begin */
-    
-    .header_wrap {
+}
+
+
+/* .top-line_header end */
+
+
+/* .header_wrap begin */
+
+.header_wrap {
     margin-top: 40px;
-    }
-    .h1-logo {
+}
+
+.h1-logo {
     color: #fff;
     margin-top: 120px;
     border-bottom: #F39E1A 8px solid;
     display: inline-block;
     padding-bottom: 5px;
-    }
-    .ul-header {
+}
+
+.ul-header {
     @extend .ul-menu;
     padding-top: 40px;
-    }
-    .ul-header_li {
+}
+
+.ul-header_li {
     font-family: "RalewaySemiBold", $helvetica;
     line-height: em(30px);
-    }
-    .ul-header_li::before {
+}
+
+.ul-header_li::before {
     display: inline-block;
     content: "";
-    @include triangle(11px 6px, #F39E1A, right);
+    @include triangle(11px 6px,
+    #F39E1A,
+    right);
     margin-right: 5px;
-    }
-    .a-header {
+}
+
+.a-header {
     text-decoration: none;
     color: #fff;
     font-size: em(18px);
     &:hover {
-    text-decoration: underline;
-    color: #fff;
+        text-decoration: underline;
+        color: #fff;
     }
-    }
-    
-    .header-form {
+}
+
+.header-form {
     @extend .forms;
-    }
-    .h4-form {
+}
+
+.h4-form {
     font-family: "PFCentroSlabProMedium", $georgia;
     font-size: em(30px);
     color: #fff;
     text-transform: none;
     margin: 0;
-    }
-    .span-form {
+}
+
+.span-form {
     display: block;
     font-size: em(15px);
     font-family: "RalewayRegular", $georgia;
     padding: 18px 0 30px 0;
-    }
-    .div-form {
+}
+
+.div-form {
     padding-bottom: 20px;
-    }
-    .div-form_a {
+}
+
+.div-form_a {
     text-align: center;
-    }
-    .div-form_input {
+}
+
+.div-form_input {
     width: 100%;
     height: 30px;
     background-color: #34465A;
@@ -216,110 +244,127 @@
     border-top: 2px solid #1F2A36;
     color: #fff;
     &:focus {
-    font-size: 18px;
-    border-top: 5px solid #1F2A36;
+        font-size: 18px;
+        border-top: 5px solid #1F2A36;
     }
     @include transition(all 1.0s ease-in-out);
-    }
-    .div-form_span {
+}
+
+.div-form_span {
     display: block;
     padding-bottom: 7px;
     font-family: "RalewayRegular", $georgia;
-    }
-    .a-form-button {
+}
+
+.a-form-button {
     @extend .button;
-    }
-    .a-form-button_span {
+}
+
+.a-form-button_span {
     @extend .button_span;
-    }
-    /* .header_wrap end */
-    
-    /* .icon-row begin */
-    
-    .icon-row {
+}
+
+
+/* .header_wrap end */
+
+
+/* .icon-row begin */
+
+.icon-row {
     text-align: center;
     margin-top: 40px;
-    }
-    
-    /* .icon-row end */
-    
-    
-    /* .main-section begin */
-    
-    .main-section_white {
+}
+
+
+/* .icon-row end */
+
+
+/* .main-section begin */
+
+.main-section_white {
     position: relative;
     &:before {
-    @extend .before;
-    background: url('../img/bah_1.png') repeat-x;
-    top: -5px;
+        @extend .before;
+        background: url('../img/bah_1.png') repeat-x;
+        top: -5px;
     }
-    } 
-    
-    .main-section_head {
+}
+
+.main-section_head {
     text-align: center;
-    }
-    .h1-section {
+}
+
+.h1-section {
     display: inline-block;
-    margin: 100px 0 70px;
+    margin: 80px 0 70px;
     &:after {
-    @extend .after;
-    margin-top: 30px;
-    background-color: $a-color;
-    height: 4px;
-    width: 165px;
-    left: 50%;
-    transform: translate(-50%, 0);
+        @extend .after;
+        margin-top: 30px;
+        background-color: $a-color;
+        height: 4px;
+        width: 165px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
-    }
-    .p-section {
+}
+
+.p-section {
     margin: 0 0 65px 0;
-    }
-    
-    .content-first-row {
+    text-align: center;
+}
+
+.content-first-row {
     width: 100%;
     min-height: 550px;
     background: url('../img/s1_gray_bg.png') center bottom no-repeat;
-    }
-    
-    .item-content {
+}
+
+.item-content {
     text-align: left;
+}
+
+.item-content-down {
     padding: 100px 0 0;
-    }
-    .item-content-second {
-    padding: 0;
-    }
-    
-    .h2-item-content {
+}
+
+.h2-item-content {
     color: $a-color;
     font-size: em(25px);
     text-decoration: underline;
     font-family: "PFCentroSlabProMedium", $georgia;
-    }
-    
-    .p-item-content {
+}
+
+.p-item-content {
     font-size: em(17px);
-    font-family: "RalewayRegular"; 
+    font-family: "RalewayRegular";
     padding: 25px 0;
     border-bottom: 1px solid #DEE1E5;
-    }
-    
-    .content-triangl-bg {
+}
+
+.p-item-content_white {
+    color: #F3F3F3;
+}
+
+.content-triangl-bg {
     position: absolute;
-    top: -28px;
+    top: -100px;
     width: 100%;
     height: 100px;
     background: url('../img/s1_triangle.svg') center no-repeat;
     background-size: 100% 100%;
-    }
-    .content-triangl-wrap {
+}
+
+.content-triangl-wrap {
     position: relative;
     width: 100%;
-    }
-    .icon-wrap {
+}
+
+.icon-wrap {
     position: relative;
     width: 100%;
-    }
-    .content-icon {
+}
+
+.content-icon {
     position: absolute;
     width: 100%;
     height: 140px;
@@ -327,9 +372,9 @@
     background: url('../img/scales.svg') center bottom no-repeat;
     background-size: contain;
     z-index: 10;
-    }
-    
-    .content-icon-logo {
+}
+
+.content-icon-logo {
     position: absolute;
     width: 100%;
     height: 56px;
@@ -338,22 +383,79 @@
     background: url('../img/logo_triangle.svg') center bottom no-repeat;
     background-size: contain;
     z-index: 10;
-    }
-    
-    
-    .content-second-row {
-    background-color: #000;
-    }
-    
-    .main-section_submit {
+}
+
+.content-second-row {
+    background-color: #394B5F;
+}
+
+.main-section_submit {
     width: 100%;
-    background-color: $color-submit;
+    background-color: #2C3949;
     padding: 60px 0;
     text-align: center;
+}
+
+.main-section_submit-white {
+    background-color: #E5E5E5;
+}
+
+.main-section-second-title {
+    text-align: center;
+    padding: 0 0 65px 0;
+}
+
+.h2-section {
+    text-transform: uppercase;
+    font-size: em(28px);
+}
+
+.h2-section_a {
+    text-decoration: underline;
+    &:hover {
+        color: $a-color;
+        text-decoration: none;
     }
-    
-    
-    /* .main-section end */
-    .pox {
-    background-color: #000;
-    }
+}
+
+
+/* .main-section-first end */
+
+
+/* .main-section-srcond begin */
+
+.items-wrap {
+    margin-bottom: 20px;
+}
+
+.item-service {
+    max-height: 250px;
+}
+
+.img-wrap {
+    text-align: center;
+    color: $a-color;
+    border-bottom: 1px solid $a-color;
+    width: 60px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.my-my {
+    position: absolute;
+    right: -25px;
+    top: -30px;
+}
+
+.p-item-service {
+    color: #111;
+    font-family: "RalewayBold";
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px 0 60px;
+    font-size: 13px;
+}
+
+
+/* .main-section-srcond end */

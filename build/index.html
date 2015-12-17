@@ -7,253 +7,388 @@
 <!--<![endif]-->
 
 <head>
+    <meta charset="utf-8">
+    <title>Заголовок</title>
+    <meta name="description" content="">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+    <script>
+    ! function() {
+        function e(e, t, n) {
+            e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
+        }
 
-  <meta charset="utf-8">
+        function t(e) {
+            return window.localStorage && localStorage.font_css_cache && localStorage.font_css_cache_file === e
+        }
 
-  <title>Заголовок</title>
-  <meta name="description" content="">
-	<script type="text/javascript" src="js/modernizr.js"></script>
-  <!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
-  <script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
-  
-  <!-- Load CSS Compilled without JS -->
-  <noscript>
+        function n() {
+            if (window.localStorage && window.XMLHttpRequest)
+                if (t(o)) a(localStorage.font_css_cache);
+                else {
+                    var n = new XMLHttpRequest;
+                    n.open("GET", o, !0), e(n, "load", function() {
+                        4 === n.readyState && (a(n.responseText), localStorage.font_css_cache = n.responseText, localStorage.font_css_cache_file = o)
+                    }), n.send()
+                } else {
+                var c = document.createElement("link");
+                c.href = o, c.rel = "stylesheet", c.type = "text/css", document.getElementsByTagName("head")[0].appendChild(c), document.cookie = "font_css_cache"
+            }
+        }
 
-    <!--link rel="stylesheet" href="_header.min.css">
+        function a(e) {
+            var t = document.createElement("style");
+            t.innerHTML = e, document.getElementsByTagName("head")[0].appendChild(t)
+        }
+        var o = "_fonts.min.css";
+        window.localStorage && localStorage.font_css_cache || document.cookie.indexOf("font_css_cache") > -1 ? n() : e(window, "load", n)
+    }();
+    </script>
+    <!-- Load CSS Compilled without JS -->
+    <noscript>
+        <!--link rel="stylesheet" href="_header.min.css">
     <link rel="stylesheet" href="_main.min.css"!-->
-  </noscript>
-
-
-
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/fonts.css">
+    </noscript>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="fonts/myFontSVG/font/stylesheet.css">
 </head>
 
 <body>
-  <!-- Здесь пишем код -->
-  <header class="main-header"style="background-image: url(img/header_bg.jpg)">
-    <div class="top-line_header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-3">
-            <a href="#" class="header-logo"><img src="img/logo.svg" alt="" class="header-logo_img"></a>
-          </div>
-          <div class="col-md-7">
-            <nav class="menu-header">
-              <ul class="menu-header_ul">
-                <li class="li-item li-item_active"><a class="li-item_a li-item_active-a" href="#">Главная</a></li>
-                <li class="li-item"><a class="li-item_a" href="#">О компании</a></li>
-                <li class="li-item"><a class="li-item_a" href="#">Оценка</a></li>
-                <li class="li-item"><a class="li-item_a" href="#">Сделка М&A</a></li>
-                <li class="li-item"><a class="li-item_a" href="#">Бухгалтерские услуги</a></li>
-                <li class="li-item"><a class="li-item_a" href="#">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
- <div class="col-md-2 col-xs-9">
-            <a href="#menu"  class="menuToggleButton"><span></span></a>
-							<div id="menu" class="menuToggleButton_div">
-							  <ul>
-							    <li><a href="#home">Главная</a></li>
-							    <li><a href="#about">О компании</a></li>
-							    <li><a href="#contact">Оценка</a></li>
-							    <li><a href="#contact">Сделка М&A</a></li>
-							    <li><a href="#contact">Бухгалтерские услуги</a></li>
-							    <li><a href="#contact">Контакты</a></li>
-							  </ul>
-							</div>
-            <div class="phone">
-              <span class="phone_span">
+    <!-- Здесь пишем код -->
+    <header class="main-header" style="background-image: url(img/header_bg.jpg)">
+        <div class="top-line_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-3">
+                        <a href="#" class="header-logo"><img src="img/logo.svg" alt="" class="header-logo_img"></a>
+                    </div>
+                    <div class="col-md-7">
+                        <nav class="menu-header">
+                            <ul class="menu-header_ul">
+                                <li class="li-item li-item_active"><a class="li-item_a li-item_active-a" href="#">Главная</a></li>
+                                <li class="li-item"><a class="li-item_a" href="#">О компании</a></li>
+                                <li class="li-item"><a class="li-item_a" href="#">Оценка</a></li>
+                                <li class="li-item"><a class="li-item_a" href="#">Сделка М&A</a></li>
+                                <li class="li-item"><a class="li-item_a" href="#">Бухгалтерские услуги</a></li>
+                                <li class="li-item"><a class="li-item_a" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 col-xs-9">
+                        <a href="#menu" class="menuToggleButton"><span></span></a>
+                        <div id="menu" class="menuToggleButton_div">
+                            <ul>
+                                <li><a href="#home">Главная</a></li>
+                                <li><a href="#about">О компании</a></li>
+                                <li><a href="#contact">Оценка</a></li>
+                                <li><a href="#contact">Сделка М&A</a></li>
+                                <li><a href="#contact">Бухгалтерские услуги</a></li>
+                                <li><a href="#contact">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="phone">
+                            <span class="phone_span">
                 +7(459)789-77-87
               </span>
-               
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="header_wrap">
-    	<div class="container">
-    		<div class="row">
-    				<div class="col-md-8">
-			    		<h1 class="h1-logo">ARMATA FINANCIAL GROUP</h1>
-			    		<ul class="ul-header">
-			    			<li class="ul-header_li"><a class="a-header" href="#">Независимая оценка имущества</a></li>
-			    			<li class="ul-header_li"><a class="a-header" href="#">Сделки слияния и поглощения</a></li>
-			    			<li class="ul-header_li"><a class="a-header" href="#">Бухгалтерские услуги</a></li>
-			    		</ul>
-			    	</div> 
-			    	<div class="col-md-4">
-			    		<form action="#" class="header-form">
-			    		<h4 class="h4-form">Заявка:</h4>
-			    		<span class="span-form">Оставьте заявку и мы с вами свяжемся в течении 15 минут в раобчее время с 10.00 до 18.00 с пн-пт</span>
-              <div class="div-form">
-                <span class="div-form_span">Ваше имя:</span>
-                <input type="text" class="div-form_input">
-              </div>
-              <div class="div-form">
-                <span class="div-form_span">Ваш телефон:</span>
-                <input type="text" class="div-form_input">
-              </div>
-              <div class="div-form_a">
-                <a href="#" class="a-form-button"><span class="a-form-button_span">Отправить</span> </a>
-              </div>
-			    		</form>
-			    	</div>
-			    </div>
-    		</div>
-    	</div>
-    <div class="header_row">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="icon-row">
-              <a href="#" class="icon-row_a">
-                <img src="img/arrow_down.png" alt="" class="icon-img">
-              </a>
+        <div class="header_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="h1-logo">ARMATA FINANCIAL GROUP</h1>
+                        <ul class="ul-header">
+                            <li class="ul-header_li"><a class="a-header" href="#">Независимая оценка имущества</a></li>
+                            <li class="ul-header_li"><a class="a-header" href="#">Сделки слияния и поглощения</a></li>
+                            <li class="ul-header_li"><a class="a-header" href="#">Бухгалтерские услуги</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <form action="#" class="header-form">
+                            <h4 class="h4-form">Заявка:</h4>
+                            <span class="span-form">Оставьте заявку и мы с вами свяжемся в течении 15 минут в раобчее время с 10.00 до 18.00 с пн-пт</span>
+                            <div class="div-form">
+                                <span class="div-form_span">Ваше имя:</span>
+                                <input type="text" class="div-form_input">
+                            </div>
+                            <div class="div-form">
+                                <span class="div-form_span">Ваш телефон:</span>
+                                <input type="text" class="div-form_input">
+                            </div>
+                            <div class="div-form_a">
+                                <a href="#" class="a-form-button"><span class="a-form-button_span">Отправить</span> </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <section class="main-section main-section_white">
-    <div class="container">
-       <div class="main-section_head">
-          <div class="row">
-            <div class="col-xs-12">
-           
-              <h1 class="h1-section">Независимая оценка имущества</h1>
+        <div class="header_row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="icon-row">
+                            <a href="#" class="icon-row_a">
+                                <img src="img/arrow_down.png" alt="" class="icon-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div>
-      <div class="main-section_description">
-       <div class="row">
-        <div class="col-md-offset-1 col-md-10 col-xs-12">
-          
-              <p class="p-section">
-                <strong class="text-intro">Определение рыночной стоимости</strong> любого актива, или <a href="#" class="a-text-intro">оценка</a> — это первый этап всех рыночных отношений. Оценка заключается в объективном анализе объекта с целью придания ему стоимостных характеристик, выраженных в едином денежном эквиваленте. 
-              </p>
-            </div>
-          </div>
-        <div class="main-section_content">
-          
-            <div class="content-first-row">
-              <div class="row">
-              <div class="col-md-10 col-md-offset-1 col-xs-12">
-                <div class="col-md-4 col-xs-12">
-                  <div class="item-content">
-                     <h2 class="h2-item-content">Оценка ценных бумаг</h2>
-                     <p class="p-item-content">Определение рыночной стоимости ценных бумаг и документов</p>
-                  </div>
-                </div>
-             <div class="col-md-4 col-xs-12">
-                  <div class="item-content item-content-second">
-                     <h2 class="h2-item-content">Оценка бизнеса и предприятий</h2>
-                     <p class="p-item-content">Профессиональная оценка бизнес-активов предприятия</p>
-                  </div>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                  <div class="item-content">
-                     <h2 class="h2-item-content">Оценка недвижимости</h2>
-                     <p class="p-item-content">Профессиональная оценка жилого и нежилого имущества</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-10 col-md-offset-1 col-xs-12">
-                <div class="col-md-4 col-xs-12">
-                  <div class="item-content">
-                     <h2 class="h2-item-content">Оценка машин и оборудования</h2>
-                     <p class="p-item-content">Профессиональная оценка машин и оборудования для бизнеса</p>
-                  </div>
-                </div>
-             <div class="col-md-4 col-xs-12">
-               <div class="icon-wrap">
-                 <div class="content-icon"></div>
-                 <div class="content-icon-logo"></div>
-               </div>
-             </div>
-                <div class="col-md-4 col-xs-12">
-                  <div class="item-content">
-                     <h2 class="h2-item-content">Оценка инвестиционных проектов</h2>
-                     <p class="p-item-content">независимая оценка бизнес проектов любого направления</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-              
-            <div class="content-second-row">
-      
-                <div class="content-triangl-wrap">
-              <div class="content-triangl-bg"></div>
-              </div>
-              <div class="row">
-                              <div class="col-md-10 col-md-offset-1 col-xs-12">
-                <div class="col-md-4 col-xs-12">
-                  <div class="item-content">
-                     <h2 class="h2-item-content">Оценка ценных бумаг</h2>
-                     <p class="p-item-content">Определение рыночной стоимости ценных бумаг и документов</p>
-                  </div>
-                </div>
-             <div class="col-md-4 col-xs-12">
-                  <div class="item-content item-content-second">
-                     <h2 class="h2-item-content">Оценка бизнеса и предприятий</h2>
-                     <p class="p-item-content">Профессиональная оценка бизнес-активов предприятия</p>
-                  </div>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                  <div class="item-content">
-                     <h2 class="h2-item-content">Оценка недвижимости</h2>
-                     <p class="p-item-content">Профессиональная оценка жилого и нежилого имущества</p>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div>
-
-
         </div>
-          <div class="main-section_submit">
-            <div class="row">
-            <div class="col-xs-12">
-              <a href="#" class="button"> <span class="button_span">Заказать оценку</span> </a>
+    </header>
+    <section class="main-section main-section_white">
+        <div class="container">
+            <div class="main-section_head">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="h1-section">Независимая оценка имущества</h1>
+                    </div>
+                </div>
             </div>
+            <div class="main-section_description">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-xs-12">
+                        <p class="p-section">
+                            <strong class="text-intro">Определение рыночной стоимости</strong> любого актива, или <a href="#" class="a-text-intro">оценка</a> — это первый этап всех рыночных отношений. Оценка заключается в объективном анализе объекта с целью придания ему стоимостных характеристик, выраженных в едином денежном эквиваленте.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div>
-  
+            <div class="main-section_content">
+                <div class="content-first-row">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-xs-12">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="item-content item-content-down">
+                                    <h2 class="h2-item-content">Оценка ценных бумаг</h2>
+                                    <p class="p-item-content">Определение рыночной стоимости ценных бумаг и документов</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="item-content ">
+                                    <h2 class="h2-item-content">Оценка бизнеса и предприятий</h2>
+                                    <p class="p-item-content">Профессиональная оценка бизнес-активов предприятия</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="item-content item-content-down">
+                                    <h2 class="h2-item-content">Оценка недвижимости</h2>
+                                    <p class="p-item-content">Профессиональная оценка жилого и нежилого имущества</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-md-offset-1 col-xs-12">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="item-content item-content-down">
+                                    <h2 class="h2-item-content">Оценка машин и оборудования</h2>
+                                    <p class="p-item-content">Профессиональная оценка машин и оборудования для бизнеса</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="icon-wrap">
+                                    <div class="content-icon"></div>
+                                    <div class="content-icon-logo"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="item-content item-content-down">
+                                    <h2 class="h2-item-content">Оценка инвестиционных проектов</h2>
+                                    <p class="p-item-content">независимая оценка бизнес проектов любого направления</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-triangl-wrap">
+            <div class="content-triangl-bg"></div>
+        </div>
+        <div class="content-second-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-12">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item-content">
+                                <h2 class="h2-item-content">Оценка ценных бумаг</h2>
+                                <p class="p-item-content p-item-content_white">Определение рыночной стоимости ценных бумаг и документов</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item-content item-content-down">
+                                <h2 class="h2-item-content">Оценка бизнеса и предприятий</h2>
+                                <p class="p-item-content p-item-content_white">Профессиональная оценка бизнес-активов предприятия</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="item-content">
+                                <h2 class="h2-item-content">Оценка недвижимости</h2>
+                                <p class="p-item-content p-item-content_white">Профессиональная оценка жилого и нежилого имущества</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section_submit">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="button"> <span class="button_span">Заказать оценку</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-section main-section_white">
+        <div class="container">
+            <div class="main-section_head">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="h1-section">Сделки M&A</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="main-section_description">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-xs-12">
+                        <p class="p-section">
+                            <strong class="text-intro">Сделки cлияния и поглощения</strong> – это процессы укрупнения бизнеса и капитала. Популярность сделки слияния и поглощения приобрели в конце 80-х годов и сейчас они являются одним из основных движущих факторов развития бизнеса на макро и микроуровне. Эффективность сделок слияния и поглощения огромна и не вызывает сомнений.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-section-second-title">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="h2-section">
+                    Наши услуги по <a href="#" class="h2-section_a">сопровождению сделок M&A</a> 
+                  </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="main-section_content">
+                <div class="items-wrap">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_b my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_c my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_d my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_e my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_f my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_g my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                           <div class="col-md-2 col-sm-3 col-xs-6  col-sm-3 col-md-offset-2">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_h my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_i my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                         <div class="col-md-2 col-sm-3 col-xs-6 ">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_j my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                         <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="item-service">
+                                <div class="img-wrap">
+                                    <div class="my my_k my-my"></div>
+                                </div>
+                                <p class="p-item-service">Разработка новой структуры управления бизнесом</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section_submit main-section_submit-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="button"> <span class="button_span">Заказать сопровождение</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="loader">
+        <div class="loader_inner"></div>
     </div>
-  </section>
- 
-
-
-
-
-  <div class="loader">
-    <div class="loader_inner"></div>
-  </div>
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
   <script src="libs/html5shiv/es5-shim.min.js"></script>
   <script src="libs/html5shiv/html5shiv.min.js"></script>
   <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
   <script src="libs/respond/respond.min.js"></script>
   <![endif]-->
-
-<!-- Load Scripts -->
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="libs/MenuToggleButton/MenuToggleButton.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+    <!-- Load Scripts -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="libs/MenuToggleButton/MenuToggleButton.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
