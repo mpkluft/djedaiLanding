@@ -55,6 +55,15 @@
 .my.my_k::before {
   content: 'k';
 }
+.my.my_l::before {
+  content: 'l';
+}
+.my.my_m::before {
+  content: 'm';
+}
+.my.my_n::before {
+  content: 'n';
+}
 .my.my_o::before {
   content: 'o';
 }

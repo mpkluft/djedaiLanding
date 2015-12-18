@@ -13,7 +13,9 @@ $(function(){
     $("img[src*='svg']").attr("src", function() {
       return $(this).attr("src").replace(".svg", ".png");
     });
-  };  
+  };
 
+
+ //$('.main-section-item').equalHeight();
 
 });
