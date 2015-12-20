@@ -21,6 +21,31 @@
     div.item-content-circle_middle-right {
         margin-right: 0;
     }
+    h3.about-work-h3 {
+        line-height: 23px;
+        font-size: 15px;
+    }
+    div.about-work-item_wrap {
+        top: 21%;
+    }
+    div.about-work-item_arrow {
+        width: 110%;
+    }
+    div.wrap-one {
+        transform: translate(50%, 0);
+    }
+    div.wrap-two {
+        transform: translate(34%, 0);
+    }
+    div.wrap-three {
+        transform: translate(7%, 0);
+    }
+    div.wrap-fore {
+        transform: translate(23%, 0);
+    }
+    span.about-work {
+        font-size: 18px;
+    }
 }
 
 
@@ -93,6 +118,76 @@
         font-size: 13px;
         max-width: 145px;
     }
+    div.about-work-item_arrow {
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+    div.arrow-one {
+        left: 0;
+    }
+    div.arrow-two {
+        left: 0;
+    }
+    div.arrow-thre {
+        left: 0;
+    }
+    div.arrow-fore {
+        left: 0;
+    }
+    div.wrap-one {
+        transform: translate(16%, 0);
+        ;
+    }
+    div.wrap-two {
+        transform: translate(25%, 0);
+    }
+    div.wrap-three {
+        transform: translate(26%, 0);
+    }
+    div.wrap-fore {
+        transform: translate(26%, 0);
+    }
+    div.about-work-item_wrap {
+        top: 17%;
+    }
+    div.my_item_wrap {
+        font-size: 80px;
+    }
+    div.content-wrap-about-work {
+        display: none;
+    }
+    div.content-wrap-about-work-mobile {
+        display: block;
+    }
+    .about-work-item-mobile {
+        background-color: #F39F18;
+        padding: 5px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+    div.icon-mobile {
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
+    div.my_item_wrap-mobile {
+        position: absolute;
+        color: #fff;
+        top: -20px;
+        left: 10px;
+        font-size: 98px;
+    }
+    div.about-work-h3-wrap {
+        line-height: 80px;
+    }
+    span.about-work {
+        font-size: 52px;
+    }
+    h3.about-work-h3 {
+        line-height: 93px;
+        font-size: 31px;
+        padding-left: 23px
+    }
 }
 
 
@@ -144,6 +239,29 @@
         font-size: 16px;
         max-width: 80%;
     }
+    div.my_item_wrap-mobile {
+        position: absolute;
+        color: #fff;
+        top: -18px;
+        left: 1px;
+        font-size: 80px;
+    }
+    div.about-work-h3-wrap {
+        line-height: 80px;
+    }
+    span.about-work {
+        font-size: 43px;
+    }
+    h3.about-work-h3 {
+        line-height: 70px;
+        font-size: 24px;
+        padding-left: 23px;
+    }
+    div.icon-mobile {
+        position: relative;
+        width: 100%;
+        height: 81px;
+    }
 }
 
 
@@ -177,6 +295,23 @@
     div.menuToggleButton_div {
         top: 55px;
         right: 5px;
+    }
+     div.my_item_wrap-mobile {
+        font-size: 61px;
+    }
+    div.about-work-h3-wrap {
+        line-height: 80px;
+    }
+    span.about-work {
+        font-size: 32px;
+    }
+    h3.about-work-h3 {
+        line-height: 23px;
+        font-size: 17px;
+        padding-left: 18px;
+    }
+    div.icon-mobile {
+        height: 56px
     }
 }
 

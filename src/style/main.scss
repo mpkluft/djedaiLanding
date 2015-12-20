@@ -86,6 +86,16 @@ h6 {
     margin: 0 15px;
 }
 
+.my-table {
+    display: table;
+}
+.my-table-cell {
+    display: table-cell;
+}
+.my-table-row {
+    display: table-row;
+}
+
 .main-header {
     width: 100%;
     min-height: 710px;
@@ -411,7 +421,7 @@ h6 {
 .main-section_submit {
     width: 100%;
     background-color: #2C3949;
-    padding: 60px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -631,3 +641,137 @@ h6 {
 
 
 /* .main-section fore end */
+
+
+/* .main-section five begin */
+.content-wrap-about-work {
+    padding-bottom: 70px;
+}
+.about-work-item {
+    position: relative;
+    height: 128px;
+    width: 100%;
+}
+
+.about-work-item_arrow {
+    width: 292px;
+    height: 132px;
+    position: absolute;
+    background: url('../img/tc_triangle.svg') left top no-repeat;
+    background-size: 100%;
+    z-index: 0;
+}
+
+.arrow-one {
+    background: url('../img/tc_triangle_first.svg') left top no-repeat;
+    background-size: 100%;
+    left: 72px;
+}
+.arrow-two {
+    left: 24px;
+}
+.arrow-thre {
+    left: -24px;
+}
+.arrow-fore {
+    left: -72px;
+}
+.about-work-item_wrap {
+    height: 50px;
+    width: 85%;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+}
+.wrap-one {
+    transform: translate(50%, 0);
+}
+.wrap-two{
+   transform: translate(40%, 0); 
+}
+.wrap-three{
+    transform: translate(17%, 0);
+}
+.wrap-fore{
+    transform: translate(33%, 0);
+}
+.about-work-icon {
+    position: relative;
+    width: 50px;
+    color: #fff;
+}
+.my_item_wrap {
+    position: absolute;
+    font-size: 50px;
+    top: -10px;
+    left: 0;
+}
+.about-work-h3 {
+    display: inline-block;
+    font-size: 17px;
+    width: 100%;
+    height: 26px;
+    line-height: 23px;
+    vertical-align: middle;
+    text-transform: none;
+    text-decoration: underline;
+    padding-left: 5px;
+    font-family: "PFCentroSlabProMedium";
+    color: #fff;
+}
+.about-work {
+    display: inline-block;
+    font-family: "PFCentroSlabProBold";
+    font-size: 22px;
+    color: #fff;
+}
+.content-wrap-about-work-mobile {
+    display: none;
+}
+
+/* .main-section five end */
+
+/* .main-section six begin */
+
+.main-section-item_grey {
+    background-color: #E5E5E5;
+    height: 350px;
+}
+.icon-person {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    background: url('../img/team/1.jpg')  no-repeat;
+    background-size: contain;
+    border: 4px solid #D6D6D6;
+    border-radius: 50%;
+}
+.icon-person-name {
+    display: block;
+    color: #333333;
+    font-size: 17px;
+    font-family: "RalewayBold"; 
+    padding: 34px 0 12px 0;
+}
+.icon-person-position {
+    display: block;
+    color: #788492;
+    font-family: "RalewayRegular"; 
+    padding-bottom: 25px;
+    font-size: 13px;
+}
+.icon-person-tele {
+    font-family: "RobotoBold";
+    font-size: 16px;
+}
+
+.icon-person_doe {
+    background: url('../img/team/2.jpg') no-repeat;
+    background-size: contain;
+}
+.icon-person_katya {
+    background: url('../img/team/3.jpg') no-repeat;
+    background-size: contain;
+}
+
+/* .main-section six end */
