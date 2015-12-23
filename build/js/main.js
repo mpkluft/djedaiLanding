@@ -15,6 +15,9 @@ $(function(){
     });
   };
 
+ $(".main-section_content-slider").owlCarousel({
+ 	  items : 1
+  });
 
  //$('.main-section-item').equalHeight();
 
