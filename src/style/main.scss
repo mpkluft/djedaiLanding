@@ -6,7 +6,7 @@
 @import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
 @import "../libs/fancybox/jquery.fancybox.css";
 @import "../libs/MenuToggleButton/MenuToggleButton.css";
-
+@import "../libs/MenuToggleButton/MenuToggleButton.css";
 /*
 * Custom
 */
@@ -786,6 +786,11 @@ h6 {
 /* .main-section six end */
 
 /* .main-section seven slider begin */
+
+.main-section_content-slider {
+    margin-bottom: 100px;
+}
+
 .slide-wrap {
     width: 100%;
     text-align: center;
@@ -801,6 +806,7 @@ h6 {
 .slide-img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 }
 .slide-title {
     display: block;
@@ -822,13 +828,20 @@ h6 {
     color: #333333;
 }
 
-.slide img { 
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
+.main-section_content-slider .owl-dots {
+            text-align: center;
+            margin: 15px 0 0 0;
+        }
+ .main-section_content-slider  .owl-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: grey;
+            margin: 0 5px;
+            border-radius: 50%;
+        }
+   .main-section_content-slider .owl-dots .active {
+            background-color: #F39F18;
+        }
 
 /* .main-section seven slider end */

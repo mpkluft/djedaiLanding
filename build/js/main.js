@@ -15,8 +15,12 @@ $(function(){
     });
   };
 
- $(".main-section_content-slider").owlCarousel({
- 	  items : 1
+ $(".owl-carousel").owlCarousel({
+ 	    items : 1,
+		autoplay : true,
+		dots : true,
+		dotData : true,
+		loop : true,
   });
 
  //$('.main-section-item').equalHeight();
