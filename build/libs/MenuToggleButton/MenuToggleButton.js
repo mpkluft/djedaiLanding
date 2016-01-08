@@ -1,5 +1,6 @@
 var toggle = document.getElementsByClassName('menuToggleButton');
 var theToggle = toggle[0];
+
 //var theToggle = document.getElementById('toggle');
 
 // based on Todd Motto functions
@@ -42,3 +43,4 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }
+
