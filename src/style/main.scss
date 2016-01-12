@@ -4,8 +4,9 @@
 @import "../libs/fancybox/jquery.fancybox.css";
 @import "../libs/MenuToggleButton/MenuToggleButton.css";
 @import "../fonts/myFontSVG/font/stylesheet.css";
-@import "../libs/owlCarousel/owl.carousel.min.css";
+@import "../../bower_components/owl.carousel/dist/assets/owl.carousel.min.css";
 @import "partials/fonts.scss";
+@import "../../bower_components/animate.css/animate.min.css";
 
 /* Custom */
 @import "partials/app.scss";
