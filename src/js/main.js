@@ -6,5 +6,6 @@
 //= ../../bower_components/equalheight/dist/jquery.equalheight.js
 //= ../libs/MenuToggleButton/MenuToggleButton.js
 //= partials/fontsLocalStorage.js
+//= ../../bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js
 /* Custom */
 //= partials/app.js

@@ -32,5 +32,5 @@ $(function(){
       }
     }
     //centeredImg("pluginCentered", "b-news-item__img");
-
-});
+    $('.animation-element').addClass("invisible").viewportChecker({classToAdd: 'visible animated bounceInRight',offset: 100});
+  })
